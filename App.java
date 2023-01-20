@@ -6,8 +6,9 @@ import java.util.Scanner;
 public final class App {
     public static void main(String[] args) {
         Random rand = new Random();
-        Integer guessNum = rand.nextInt();
-
+        Integer guessNum = rand.nextInt(100);
+        //show the guessNum
+        System.out.println("The number to guess: " + guessNum);
         Integer myGuess = 0;
 
         //using scanner
